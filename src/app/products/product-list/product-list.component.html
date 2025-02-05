@@ -1,5 +1,7 @@
 <h2>Список продуктов</h2>
     <ul>
-      <li *ngFor="let product of products">{{ product }}</li>
+      <li *ngFor="let product of products">
+        <a [routerLink]="['/products', product.id]">{{ product.name }}</a>
+      </li>
     </ul>
 <app-custom-button label="Обновить список" (click)="refreshProducts()"></app-custom-button>
