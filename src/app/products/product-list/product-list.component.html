@@ -1,0 +1,5 @@
+<h2>Список продуктов</h2>
+    <ul>
+      <li *ngFor="let product of products">{{ product }}</li>
+    </ul>
+<app-custom-button label="Обновить список" (click)="refreshProducts()"></app-custom-button>
