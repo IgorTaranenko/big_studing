@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductsModule } from './products/products.module';
 import { TodoListModule } from './todo-list/todo-list.module';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 
 
@@ -15,7 +17,8 @@ import { TodoListModule } from './todo-list/todo-list.module';
     CoreModule,
     SharedModule,
     ProductsModule,
-    TodoListModule
+    TodoListModule,
+    RouterModule.forRoot(routes)
   ],
   bootstrap: [AppComponent]
 })
